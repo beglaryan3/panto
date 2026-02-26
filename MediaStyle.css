@@ -1,0 +1,149 @@
+@media(max-width:1300px) {
+    .section1_item_title {
+        font-size: 16px;
+    }
+
+    .section1_item_text {
+        font-size: 10px;
+    }
+}
+
+@media(max-width:1190px) {
+    .section1_title {
+        width: 100%;
+    }
+
+    .section1_item {
+        max-width: 30%;
+        flex-grow: 1;
+        text-align: center;
+    }
+}
+
+@media(max-width:1320px) {
+.section4_title{
+  font-size: 30px;
+}
+.secrtion4_text{
+  font-size: 12px;
+  max-width:300px ;
+}
+}
+
+@media(max-width:860px) {
+    .burger_btn {
+        display: flex;
+    }
+
+    .header {
+        height: 100vh;
+    }
+
+
+    .nav {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        backdrop-filter: blur(12px);
+        background-color: rgba(128, 128, 128, 0.518);
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-100%);
+        min-width: 430px;
+        transition: .5s;
+    }
+
+    nav.show {
+        transform: translateX(0);
+    }
+
+
+    .burger_line.active {
+        position: absolute;
+    }
+
+    .burger_line:nth-child(1).active {
+        transform: rotate(45deg);
+    }
+
+    .burger_line:nth-child(2).active {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    .burger_line:nth-child(3).active {
+        transform: rotate(-45deg);
+    }
+
+    .nav_list {
+        flex-direction: column;
+        gap: 40px;
+
+    }
+
+    .nav_link {
+        color: var(--black);
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+
+
+    .header_text {
+        font-size: 12px;
+    }
+
+
+}
+
+@media(max-width:842px) {
+    .section1 {
+        justify-content: space-around;
+    }
+}
+
+
+@media(max-width:600px) {
+    .section1_item {
+        max-width: 100%;
+    }
+
+    .section1_title {
+        text-align: center;
+    }
+
+    .section2 {
+        padding: 20px;
+    }
+
+    .section2_title {
+        font-size: 35px;
+    }
+
+    .cart_item_controls {
+        width: 100%;
+    }
+
+    .cart_item_info {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+    }
+
+    .cart_item_box {
+        justify-content: center;
+        gap: 10px;
+        align-content: center;
+    }
+
+    .categoryesButtons {
+        gap: 5px;
+    }
+
+    .categoryes_btn {
+        padding: 5px 15px;
+    }
+}
