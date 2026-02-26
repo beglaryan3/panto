@@ -169,7 +169,7 @@ function createProduct(array, reset) {
         const newProduct = document.createElement("div")
         newProduct.className = "product"
         newProduct.innerHTML = `
-        <img src="${element.img}" alt="" class="product_img" data-img="${element.img}">
+        <img loading="lazy" src="${element.img}" alt="" class="product_img" data-img="${element.img}">
         <span class="product_category" data-category="${element.category}">${element.category}</span>
         <p class="product_name">${element.name}</p>
         <div class="section2_product_price_addBtn">
@@ -230,7 +230,7 @@ function createBestProduct(productArray, productSale) {
         product.innerHTML = `
              <div class="product">
                 <span class="sale_value">${productSale}%</span>
-                <img src="${element.img}" alt="" class="product_img" data-img="${element.img}">
+                <img loading="lazy" src="${element.img}" alt="" class="product_img" data-img="${element.img}">
                 <span class="product_category" data-category="${element.category}">${element.category}</span>
                 <p class="product_name">${element.name}</p>
                 <div class="section2_product_price_addBtn">
@@ -287,7 +287,7 @@ function createCartItem(productObject) {
     const cartItem = document.createElement("div")
     cartItem.className = "cart_item"
     cartItem.innerHTML = `
-        <img src="${productObject.img}" alt="" class="cart_item_img" data-img="${productObject.img}">
+        <img src="${productObject.img}" loading="lazy" alt="" class="cart_item_img" data-img="${productObject.img}">
         <div class="cart_item_box">
             
                <div class="cart_item_info">
